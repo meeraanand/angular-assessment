@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<body>
+	 <h3>Form validation </h3>
+	<form action="index.html" name="myform" id="myform" method="post">
+	Name:	
+     <input type="text" name="fname" id="fname" required></br></br>
+     Email:
+     <input type="text" name="email" id="email" required ></br></br>
+     Phone:
+     <input type="text" name="phone" id="phone" required></br></br>
+     Address:
+     <textarea cols="20" rows="5" id="Address" name="Address"></textarea></br></br>
+     <input type="submit" name="submit" id="submit" onclick="validate();">
+
+
+
+	</form>
+	<script type="javascript">
+     var validate = function(){
+     var email = document.getElementById('txtEmail');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+    alert('Please provide a valid email address');
+
+    email.focus;
+    return false;
+
+ }
+ //alert("valid email address");
+ document.write("true");
+}</script>
+	</script>
+	
+</body>
+</html>		
