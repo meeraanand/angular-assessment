@@ -1,0 +1,29 @@
+
+
+<!doctype html>
+<html>
+<body>
+<input type='text' id='txtEmail'/>
+<input type='submit' name='submit' onclick='Javascript:checkEmail();'/>
+<script language="javascript">
+
+var checkEmail = function() {
+
+    var email = document.getElementById('txtEmail');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+    console.log("false");
+
+    email.focus;
+    return false;
+
+ }
+ //alert("valid email address");
+ console.log("true");
+}</script>
+
+
+
+</body>
+</html
