@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <title>Object properties</title>
+</head>	
+<body>
+   <p id="demo"></p>
+   <script type="text/javascript">
+     var person = {
+     	firstName: "Meera",
+     	lastName: "karjala",
+     	email: "k.meeraanand@gmail.com",
+     	phone: 4085960817,
+     	fullDetails: function(){
+     		return this.firstName + " </br>" + this.lastName + "</br> "+this.email + " </br>"+ this.phone;
+
+     	}
+     };
+
+   document.getElementById("demo").innerHTML = person.fullDetails();
+   </script>
+
+</body>
+</html>	
