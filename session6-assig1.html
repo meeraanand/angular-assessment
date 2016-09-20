@@ -1,0 +1,23 @@
+<html>
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $("document").ready(function(){
+    	 $('p').on({
+			// 	//eventname : function(){}
+				click: function(e){
+					$("body").append("<p>This is another click</p>")
+			
+			 	},
+				dblclick : function(e){
+					$("body").append("<p>This is double click</p>")
+			 	}
+			 });
+    	});
+
+    </script>
+ </head>
+ <body>
+ <p>Click me! </p>
+</body>
+</html>
