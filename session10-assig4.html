@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Title</title>
+	<meta charset="UTF-8" />
+	<script src="angular.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	var app = angular.module("app",[]);
+	app.controller("itemController" ,function($scope){
+		$scope.msg1 = "Hello controller1";
+
+	});
+	app.controller("textController" , function($scope){
+		$scope.msg2 = "Hello controller2";
+
+	});
+	</script>
+
+	<body>
+     <div ng-app="app" >
+     	<div ng-controller="itemController">
+     <p> {{ msg1 }}</p>
+ </div>
+     
+
+      <div ng-controller="textController">
+     <p> {{ msg2 }}</p>
+     </div>
+ </div>
+
+	</body>
+	</html>	

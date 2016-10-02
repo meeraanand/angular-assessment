@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+	<title>Title</title>
+	<meta charset="UTF-8" />
+	<script src="angular.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	var myapp = angular.module("myapp" ,[]);
+	myapp.controller("mycontroller", function($scope){
+		$scope.name = "Meera";
+		$scope.lastname = "karjala";
+
+	});
+	</script>
+	<body>
+
+    <div ng-app="myapp" ng-controller="mycontroller">
+
+    <p>{{name +"  " + lastname }}</p>
+    </div>	
+
+
+    </div>	
+	</body>
+	</html>	
