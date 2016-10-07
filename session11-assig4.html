@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Title</title>
+	<meta charset="UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	var module=angular.module("myApp",[]);
+	module.controller("myCtrl",function($scope){
+		$scope.first = "Meera";
+		
+
+	});
+
+
+
+	</script>
+	<body ng-app="myApp">
+		<div ng-controller="myCtrl">
+			First:<input type="text" ng-model="first">
+			<p ng-bind="first"></p>
+
+
+		</div>	
+
+
+	</body>
+	</html>

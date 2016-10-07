@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>Title</title>
+	<meta charset="UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+	var module = angular.module("myApp",[]);
+	module.controller("myCtrl",function($scope){
+		$scope.onSubmit = function(){
+			alert("The action is " + $scope.action + "And the number" + $scope.number);
+		}
+
+	});
+
+	</script>
+
+	<body ng-app="myApp">
+		<div ng-controller="myCtrl">
+		Action:<input type="text" ng-model="action">
+		Number:<input type="text" ng-model="number">
+		<p>{{ action + " " + number}}</p>
+		<button ng-dblclick="onSubmit()">Submit</button>
+	</div>
+
+
+	</body>
+	</html>	
