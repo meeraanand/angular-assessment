@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<title>Title</title>
+	<meta charset="UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript">
+	var myApp = angular.module('myApp', []);
+	myApp.controller("myCtrl",function($scope){
+		$scope.cars = ["Dodge","Fiat","Audi","Volvo","BMW","Ford"];
+		
+		
+	});
+	</script>
+</head>
+<body ng-app = "myApp">
+	<div ng-controller="myCtrl">
+		<ul>
+			<li ng-repeat="x in cars | orderBy">
+            {{ x }}
+
+			</li>
+
+		</ul>
+
+
+	</div>
+	<p>The array items are displayed alphabetically</p>
+
+	</body>
+	</html>

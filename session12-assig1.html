@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title>Title</title>
+	<meta charset="UTF-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script type="text/javascript">
+	var myApp = angular.module('myApp', []);
+	myApp.controller("myCtrl",function($scope){
+		$scope.first = "meera";
+		$scope.last = "karjala";
+		$scope.gender = "female";
+
+	});
+
+	</script>
+</head>
+<body ng-app="myApp">
+	<div ng-controller="myCtrl"> 
+	<p>{{first |uppercase}}</p>
+	<p>{{last |uppercase}}</p>
+	<p>{{gender |uppercase}}</p>
+ </div>
+</body>
+</html>
